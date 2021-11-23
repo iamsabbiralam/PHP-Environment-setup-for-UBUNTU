@@ -99,7 +99,7 @@ sudo systemctl start snapd
 sudo systemctl enable snapd
 ~~~
 
-# Fro Uninstall the Snap
+# For Uninstall the Snap
 ~~~
 sudo apt autoremove --purge snapd
 ~~~
