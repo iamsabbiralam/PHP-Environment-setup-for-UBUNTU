@@ -81,6 +81,23 @@ sudo apt install nodejs
 sudo apt-get install --reinstall nodejs-legacy     # fix /usr/bin/node
 ~~~
 
+# Install Protobuf
+~~~
+sudo apt install -y protobuf-compiler
+protoc --version  # Ensure compiler version is 3+
+~~~
+
+# Then install ProtoC
+~~~
+go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
+~~~
+
+# After that paste below command line into your .ZSH file
+~~~
+export GO_PATH=~/go
+export PATH=$PATH:/$GO_PATH/bin
+~~~
+
 # Install Skype
 ~~~
 sudo snap install skype
